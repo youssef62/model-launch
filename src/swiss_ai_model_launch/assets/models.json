@@ -157,7 +157,7 @@
     "environment": "src/swiss_ai_model_launch/assets/envs/sglang5.16_base.toml",
     "nodes_per_replica": 4,
     "framework_args": "--tensor-parallel-size 4 --pipeline-parallel-size 4 --expert-parallel-size 4 --load-format sharded_state --attention-backend flashinfer --trust-remote-code --context-length 32768 --mem-fraction-static 0.85 --max-running-requests 256 --tool-call-parser glm47 --reasoning-parser glm45 --enable-metrics",
-    "pre_launch_cmds": "pip install --quiet --break-system-packages https://github.com/eth-easl/servekit/archive/39d271a.tar.gz",
+    "pre_launch_cmds": "pip install --quiet --break-system-packages https://github.com/eth-easl/servekit/archive/cd8f0b8.tar.gz",
     "servekit_optims": true,
     "model_path": "/capstor/store/cscs/swissai/infra01/hf_models/models/zai-org/GLM-5.1-FP8",
     "servekit_args": "--servekit-artifact-path /capstor/store/cscs/swissai/infra01/swiss-ai-serving/servekit-artifacts/glm5.1-fp8-tp4-pp4 --overlap"
@@ -168,7 +168,7 @@
     "environment": "src/swiss_ai_model_launch/assets/envs/sglang5.16_base.toml",
     "nodes_per_replica": 4,
     "framework_args": "--tensor-parallel-size 4 --pipeline-parallel-size 4 --expert-parallel-size 4 --load-format sharded_state --attention-backend flashinfer --trust-remote-code --context-length 32768 --mem-fraction-static 0.85 --tool-call-parser glm47 --reasoning-parser glm45 --enable-metrics",
-    "pre_launch_cmds": "pip install --quiet --break-system-packages https://github.com/eth-easl/servekit/archive/39d271a.tar.gz",
+    "pre_launch_cmds": "pip install --quiet --break-system-packages https://github.com/eth-easl/servekit/archive/cd8f0b8.tar.gz",
     "servekit_optims": true,
     "model_path": "/capstor/store/cscs/swissai/infra01/hf_models/models/zai-org/GLM-4.7",
     "servekit_args": "--servekit-artifact-path /capstor/store/cscs/swissai/infra01/swiss-ai-serving/servekit-artifacts/glm4.7-tp4pp4 --overlap"
